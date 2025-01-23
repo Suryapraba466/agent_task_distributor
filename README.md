@@ -73,10 +73,11 @@ npm start
 The frontend will be running at http://localhost:3001.
 
 **Contributing**
-Fork the repository.
-Clone your fork.
-Create a new branch (git checkout -b feature-name).
-Make your changes.
-Commit your changes (git commit -m 'Add some feature').
-Push to your fork (git push origin feature-name).
-Open a pull request.
+
+1. Fork the repository.
+2. Clone your fork.
+3. Create a new branch (git checkout -b feature-name).
+4. Make your changes.
+5. Commit your changes (git commit -m 'Add some feature').
+6. Push to your fork (git push origin feature-name).
+7. Open a pull request.
