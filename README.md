@@ -46,7 +46,9 @@ yarn install
 3. Setup Environment Variables
 Create a .env file in the mern-backend folder and add the following variables:
 MONGO_URI=mongodb+srv://suryapraba466:rwSTOJHB9FNjIliU@agentcluster.g9ulw.mongodb.net/TaskDistributor?retryWrites=true&w=majority
+
 PORT=3000
+
 JWT_SECRET=9c524137ab46cba00e256939b8e431faa7a49d09f8b3629dc2569f2e93a5090ce7aa26bc328ebafee8b713bea10bf3d63c02385b4ac69cecf591a7b4ab9cf417
 
 npm start
