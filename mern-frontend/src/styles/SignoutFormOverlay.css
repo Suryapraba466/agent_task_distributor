@@ -1,0 +1,119 @@
+.signout-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.signout-modal {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.3s ease-out;
+}
+
+.signout-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.signout-header h2 {
+  color: #1a237e;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.signout-icon {
+  color: #1a237e;
+}
+
+.signout-modal p {
+  color: #666;
+  margin-bottom: 24px;
+  font-size: 1rem;
+}
+
+.signout-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.signout-buttons button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.confirm-button {
+  background: #dc2626;
+  color: white;
+}
+
+.confirm-button:hover {
+  background: #b91c1c;
+}
+
+.cancel-button {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.cancel-button:hover {
+  background: #d1d5db;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .signout-modal {
+    padding: 20px;
+    width: 70%;
+  }
+
+  .signout-buttons {
+    flex-direction: column;
+  }
+
+  .signout-buttons button {
+    width: 100%;
+    justify-content: center;
+  }
+}

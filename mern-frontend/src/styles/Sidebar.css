@@ -1,0 +1,165 @@
+/* General Sidebar Styling */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: linear-gradient(180deg, #1a237e 0%, #0e0f48 100%);
+  color: white;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Heading */
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.5px;
+}
+
+/* Navigation Links */
+.sidebar nav a {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  margin: 8px 0;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-size: 1em;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.sidebar nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transform: translateX(5px);
+}
+
+.sidebar nav a.active {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Icons */
+.sidebar-icon {
+  margin-right: 12px;
+  stroke-width: 1.5px;
+}
+
+/* Hide text in Mobile View */
+.sidebar-text {
+  display: inline-block;
+  font-weight: 500;
+}
+
+.signout-button {
+  position: absolute;
+  bottom: 50px;
+  left: 15px;
+  width: calc(100% - 30px);
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-size: 1em;
+  transition: all 0.3s ease-in-out;
+}
+
+.signout-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transform: translateX(5px);
+}
+
+/* Responsive Styling for Sidebar */
+@media (min-width: 1024px) {
+  .sidebar nav a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 240px;
+    font-size: 0.95em;
+    padding: 16px;
+  }
+
+  .sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 32px;
+  }
+
+  .sidebar nav a {
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 70px;
+    padding: 20px 10px;
+    background: linear-gradient(180deg, #1a237e 0%, #0e0f48 100%);
+  }
+
+  .sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .sidebar nav a {
+    padding: 14px 0;
+    justify-content: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 25px;
+    margin: 10px auto;
+  }
+
+  .sidebar nav a:hover {
+    transform: translateX(0) scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .sidebar-icon {
+    margin: 0;
+  }
+
+  .sidebar-text {
+    display: none;
+  }
+
+  .sidebar nav a.active {
+    background: rgba(255, 255, 255, 0.25);
+  }
+
+  .signout-button {
+    width: 50px;
+    left: 20px;
+    padding: 14px 0;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .signout-button:hover {
+    transform: translateX(0) scale(1.1);
+  }
+}

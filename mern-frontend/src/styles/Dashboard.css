@@ -1,0 +1,99 @@
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  /* min-height: 100vh;
+  margin-left: 280px; */
+  position: relative;
+  background: #f8f9fa;
+}
+
+/* Content (Main Body) */
+.content {
+  flex: 1;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Section Styles */
+.dashboard-container h3 {
+  color: #1a237e;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.dashboard-container h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #1a237e, #3949ab);
+  border-radius: 2px;
+}
+
+/* Section content */
+.overview,
+.agents,
+.upload {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.overview:hover,
+.agents:hover,
+.upload:hover {
+  transform: translateY(-2px);
+}
+
+/* Section text styles */
+.overview p,
+.agents p,
+.upload p {
+  color: #4a5568;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+/* For Tablet Screens */
+@media (max-width: 768px) {
+  /* .dashboard-container {
+    margin-left: 240px;
+  } */
+
+  .content {
+    padding: 1.5rem;
+  }
+
+  .dashboard-container h3 {
+    font-size: 1.75em;
+  }
+}
+
+/* For Mobile Screens */
+@media (max-width: 480px) {
+  /* .dashboard-container {
+    margin-left: 80px;
+  } */
+
+  .content {
+    padding: 1rem;
+  }
+
+  .dashboard-container h3 {
+    font-size: 1.5em;
+  }
+
+  .overview,
+  .agents,
+  .upload {
+    padding: 1.5rem;
+  }
+}
