@@ -18,12 +18,14 @@ Tasks are distributed equally among agents.
 Tasks are saved to MongoDB and displayed on the frontend.
 
 **Technologies Used**
+
 Backend: Node.js, Express.js, MongoDB, JWT Authentication
 Frontend: React.js
 Libraries: Axios, Lucide Icons, CSV Parser
 Authentication: JSON Web Tokens (JWT)
 
 **Setup and Execution Instructions**
+
 Prerequisites
 Node.js (v14 or higher)
 MongoDB (locally or using a cloud database like MongoDB Atlas)
